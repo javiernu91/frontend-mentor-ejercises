@@ -1,0 +1,131 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243 229 216);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+  justify-content: center;
+  align-items: center;  
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(91 86 83);
+  margin: 32px 0;
+}
+.card-container {
+ background-color: rgb(255 255 255);
+ max-width: 600px;
+ height: auto;
+ padding: 32px;
+ border-radius: 32px;
+
+}
+
+.recipe-image {
+  width: 100%;
+  border-radius: 24px;
+  margin-bottom: 8px;
+}
+
+.recipe-summary{
+  text-wrap: pretty;
+}
+
+h1, h2 {
+  font-family: 'YoungSerif';
+  margin: 16px 0;
+}
+
+h1 {
+  font-size: 32px;
+  color: rgb(42 41 39);
+}
+
+h2 {
+  color: rgb(126 67 49);
+}
+h3 {
+  color: rgb(107, 43, 71);
+}
+
+.preparation-content {
+  background-color: rgb(255 247 252);
+  border-radius: 24px;
+  margin: 24px 0;
+  padding: 16px;
+}
+
+ul, ol {
+  margin: 12px 20px;
+}
+
+li {
+  margin-bottom: 8px;
+  list-style: square;
+  color: rgb(126 67 49);
+  line-height: 18px;
+}
+li p {
+  color: rgba(91, 86, 83, 0.884);
+  margin-left: 12px;
+  text-wrap: pretty;
+}
+
+.ingredients-content, .instructions-content {
+  margin: 18px 0;
+  padding: 0 0 12px 0;
+  border-bottom: solid 0.5px rgb(91 86 83 / 42%);
+}
+
+.nutirion-content ul {
+  margin: 18px 0;
+}
+
+.nutirion-content ul li{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;  
+  height: 28px;
+  border-bottom: solid 0.5px rgb(91 86 83 / 42%);
+}
+
+.nutirion-content ul li p {
+  margin-left: 32px;
+}
+
+
+.attribution {
+ 
+  bottom: 0px;
+  margin-top: 32px;  
+}
+
+@media (max-width: 450px) {
+
+  body {
+    margin: 0;
+    background-color: white;
+  }
+
+  .card-container {
+    width: 100%;
+    height: auto;
+    padding: 0;  
+    border-radius: 0;
+   }
+   
+   .recipe-image {
+    border-radius: 0;
+  }
+
+  .card-content {
+    padding: 0 32px;
+  }
+
+}
